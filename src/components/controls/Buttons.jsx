@@ -13,10 +13,16 @@ function Buttons({ onSubmit, onChange, modeChange }) {
         <option value="amy">Amy</option>
         <option value="zapp-brannigan">Zapp Brannigan</option>
       </select>
-      <select onClick={modeChange}>
-        <option value="light">light mode</option>
-        <option value="dark">dark mode</option>
-      </select>
+      <input
+        onClick={modeChange}
+        id="light"
+        type="radio"
+        name="theme"
+        value="light"
+      />
+      <label htmlFor="light">light mode</label>
+      <input onClick={modeChange} type="radio" name="theme" value="dark" />
+      <label htmlFor="dark">dark mode</label>
     </form>
   );
 }

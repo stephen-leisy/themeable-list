@@ -17,6 +17,7 @@ export default function Home() {
     character,
     setImage,
     theme,
+    setTheme,
     handleMode,
   } = useContext(CharacterContext);
 

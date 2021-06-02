@@ -23,7 +23,7 @@ const CharacterProvider = ({ children }) => {
   const handleChange = ({ target }) => {
     setCharacter(target.value);
   };
-
+  console.log(theme);
   const handleMode = ({ target }) => {
     setTheme(target.value);
   };
