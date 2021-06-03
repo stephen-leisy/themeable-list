@@ -12,3 +12,15 @@ ul {
   background-color: black;
   color: white;
 }
+
+input {
+  display: none;
+}
+
+label:hover {
+  cursor: pointer;
+  color: red;
+}
+input:active {
+  transform: scale(0.8);
+}

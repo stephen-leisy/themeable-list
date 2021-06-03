@@ -10,6 +10,7 @@ const CharacterProvider = ({ children }) => {
   const [character, setCharacter] = useState('bender');
   const [loading, setLoading] = useState(false);
   const [theme, setTheme] = useState('dark');
+  const [count, setCount] = useState(1);
 
   const handleClick = async (event) => {
     event.preventDefault();
@@ -23,9 +24,10 @@ const CharacterProvider = ({ children }) => {
   const handleChange = ({ target }) => {
     setCharacter(target.value);
   };
-  console.log(theme);
+  console.log(theme, count);
   const handleMode = ({ target }) => {
     setTheme(target.value);
+    setCount(count + 1);
   };
 
   const state = {
@@ -39,6 +41,7 @@ const CharacterProvider = ({ children }) => {
     setImage,
     theme,
     setTheme,
+    count,
   };
 
   return (
