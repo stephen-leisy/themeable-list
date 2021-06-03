@@ -1,0 +1,26 @@
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.lightMode {
+  background-color: bisque;
+}
+
+.darkMode {
+  background-color: black;
+  color: white;
+}
+
+input {
+  display: none;
+}
+
+label:hover {
+  cursor: pointer;
+  color: red;
+}
+input:active {
+  transform: scale(0.8);
+}
